@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_empty"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal" >
+
+    <com.app.android.hashmap.font.RobotoTextView
+        android:id="@+id/textTerm"
+        style="@style/TextViewAppearance.Caption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:paddingBottom="4dp"
+        android:paddingLeft="0dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <com.app.android.hashmap.font.RobotoTextView
+        android:id="@+id/textDates"
+        style="@style/TextViewAppearance.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RobotoTextViewBase"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="16sp" />
+
+    <com.app.android.hashmap.font.RobotoTextView
+        android:id="@+id/RobotoTextViewBase"
+        style="@style/TextViewAppearance.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textTerm"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:textColor="@color/main_color_grey_700"
+        android:textSize="16sp" />
+
+</RelativeLayout>

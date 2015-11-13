@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.app.android.hashmap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:id="@+id/container"
+    android:padding="24dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+         >
+
+        <com.app.android.hashmap.font.FontelloTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fontello_search"
+            android:textColor="@color/main_color_grey_600"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:inputType="textNoSuggestions" 
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:hint="@string/search_term"
+            android:textColor="@color/main_color_grey_400" />
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.app.android.hashmap.font.FontelloTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/map_pin"
+            android:textColor="@color/main_color_grey_600"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <AutoCompleteTextView
+            android:id="@+id/AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:hint="@string/base_loc"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/main_color_grey_400"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <Switch
+            android:id="@+id/switchDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:text="Date Range"
+            android:textColor="@color/main_color_grey_600"
+            android:textColorHint="@color/main_color_grey_600"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:animateLayoutChanges="true"
+        android:id="@+id/linearLayoutStartDate"
+        android:paddingLeft="40dp" >
+
+        <com.app.android.hashmap.font.FontelloTextView
+            android:id="@+id/startDateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fontello_calendar"
+            android:textColor="@color/main_color_grey_600"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/start_date"
+            android:inputType="date"
+            android:textColor="@color/main_color_grey_400" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:animateLayoutChanges="true"
+        android:id="@+id/linearLayoutEndDate"
+        android:paddingLeft="40dp" >
+
+        <com.app.android.hashmap.font.FontelloTextView
+            android:id="@+id/endDateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fontello_calendar"
+            android:textColor="@color/main_color_grey_600"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/editTextEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/end_date"
+            android:inputType="date"
+            android:textColor="@color/main_color_grey_400" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="54dp" >
+
+        <com.app.android.hashmap.view.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            app:rippleColor="@color/main_color_grey_400" >
+
+            <com.app.android.hashmap.font.RobotoTextView
+                android:id="@+id/textViewRegister"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/main_color_500"
+                android:minWidth="112dp"
+                android:text="@string/search"
+                android:textColor="#fff" />
+        </com.app.android.hashmap.view.MaterialRippleLayout>
+    </LinearLayout>
+
+</LinearLayout>
